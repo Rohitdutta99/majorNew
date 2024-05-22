@@ -6,6 +6,7 @@ import LocationDisplay from "./Location_display";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Gym_Page_new from "./Gym_Page_new";
 
 function App(){
     return <div>
@@ -16,6 +17,7 @@ function App(){
                 <Route path="/home" element={<Homepage />}/>
                 <Route path="/locate" element={<Autolocated />}/>
                 <Route path="/Location_display" element={<LocationDisplay />}/>
+                <Route path="/gympage" element={<Gym_Page_new />}/>               
             </Routes>
         </BrowserRouter>
     </div>
