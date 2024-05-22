@@ -1,0 +1,328 @@
+:root{
+  --color: rgb(237, 197, 79);
+  --seccolor: #eee;
+  --thirdcol: white;
+  --font: "Montserrat", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scrollbar-width: none;
+  font-family: var(--font);
+}
+body {
+  background: var(--seccolor);
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  position: relative;
+  height: 4rem;
+  width: 100vw;
+  background-color: var(--color);
+  
+}
+
+.logo{
+  position: relative;
+  top: 0.2rem;
+  height: 3.5rem;
+  width: 5rem;
+  margin-left: 1rem;
+}
+.logo > img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+nav{
+  position: relative;
+  bottom: 3.8rem;
+  height: 100%;
+  width: 20rem;
+  overflow: hidden;
+  margin-left: 74rem;
+}
+ul{
+  padding: 10px;
+  position: relative;
+  top: 0.5rem;
+  display: flex;
+}
+li{
+  color: var(--thirdcol);
+  font-weight: bold;
+  margin: auto;
+  position: relative;
+  list-style: none;
+}
+
+.logo > h1{
+  color: var(--thirdcol);
+  position: relative;
+  bottom: 6.7rem;
+  left: 5rem;
+}
+.div_body{
+  height: 50vh;
+  background-color: rebeccapurple;
+}
+.container{
+  margin: 0;
+  max-width: 100vw;
+}
+
+.slider-wrapper{
+  position: relative;
+  max-width: 100vw;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider{
+  scrollbar-width: none;
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  height: 70vh;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  margin: auto;
+}
+
+
+.slider img{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  width: 100%;
+}
+
+.slider-nav{
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.slider-nav a{
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+  opacity: 1;
+}
+
+footer{
+  height: 10vh;
+  background-color: var(--color);
+  text-align: center;
+  color: white;
+}
+
+footer > p{
+  position: relative;
+  top: 30%;
+}
+
+.gap{
+  height: 0.5em;
+  background-color: var(--seccolor);
+}
+
+.listing_container{
+  height: 20rem;
+}
+
+.sub_head{
+  height: 5rem;
+  color: black;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sub_head > h2{
+  position: relative;
+  top: 30%;
+  font-family: var(--font);
+}
+.listing_container{
+  display: flex;
+}
+.gym_cards{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 15rem;
+  width: 15rem;
+  position: relative;
+  top: 12%;
+  left: 2%;
+  margin-right: 5%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.gym_cards > img{
+  position: relative;
+  bottom: 5rem;
+  height: 15rem;
+}
+
+.name_label{
+  position: relative;
+  top: 70%;
+  height: 5rem;
+  background-color: white;
+  z-index: 1;
+}
+
+.gym_cards:hover{
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+  
+}
+
+.name_label > h3{
+  position: relative;
+  top: 0.4rem;
+  font-weight: bold;
+  height: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: smaller;
+}
+
+.location_gym{
+  padding-left: 0.5rem;
+  position: relative;
+  top: 1.2rem;
+  font-size: xx-small;
+}
+
+.ph_gym{
+  position: relative;
+  top: 1.3rem;
+  padding-left: 0.5rem;
+  font-size: xx-small;
+}
+
+.search_banner_div{
+  height: 60vh;
+  overflow: hidden;
+}
+
+.search_banner_div > img{
+  display: block;
+  height: 150%;
+  width: 100%;
+  position: relative;
+  bottom: 7rem;
+  z-index: -1;
+}
+.form_div{
+  position: relative;
+  bottom: 2rem;
+  text-align: center; 
+}
+
+.form_div > form{ 
+  position: relative;
+  bottom: 50vh;
+  height: 62px;
+  width: 900px;
+  border-radius: 30px;
+  background-color: white;
+  overflow: hidden;
+  margin: auto;
+}
+
+
+.form_div> form > input{
+  position: relative;
+  right: 5%;
+  padding: 25px;
+  height: 60px;
+  width: 500px;
+  border: none;
+  outline: none;
+  font-size: medium;
+}
+
+
+
+.form_div> form > button{
+  position: relative;
+  left: 10%;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  width: 25%;
+  border: none;
+  color: white;
+  background-color: var(--color);
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: large;
+}
+
+.location{
+  height: 30px;
+  display: flex;
+}
+
+.location > p{
+  font-size: small;
+  position: relative;
+  top: 0.2rem;
+  margin-left: 0.5rem;
+  color: gray;
+}
+.location > img{
+  position: relative;
+  top: 1.5px;
+  height: 1.2rem;
+  padding-left: 2.5rem;
+}
+
+.location > button{
+  position: absolute;
+  left: 92%;
+  border-radius: 50px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: small;
+  font-weight: bold;
+  color: var(--color);
+  background-color: var(--seccolor);
+}
+
+#auto-locate-btn{
+  position: relative;
+  bottom: 24rem;
+  margin: auto;
+  display: block;
+  height: 3.5rem;
+  width: 20%;
+  border: none;
+  color: white;
+  background-color: var(--color);
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: large;
+}
